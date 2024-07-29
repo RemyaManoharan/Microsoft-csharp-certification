@@ -8,7 +8,7 @@ namespace TestProject
         public static void StundentGradeFinder()
         {
             // initialize variables - graded assignments 
-            int currentAssignments = 5;
+            int examAssignments = 5;
             string[] names = { "Sophia", "Andrew", "Emma", "Logan" };
             int[] studentScores = new int[10];
             int[] sophiaScores = { 90, 86, 87, 98, 100 };
@@ -30,12 +30,16 @@ namespace TestProject
 
                 int sumAssignmentscore = 0;
                 decimal currentStudentGrade = 0;
-
+                int gradedAssignments = 0;
                 foreach (int score in studentScores)
                 {
+                    gradedAssignments++;
+                    if(gradedAssignments <= examAssignments)
                     sumAssignmentscore += score;
+                    else
+                    sumAssignmentscore += (score / 10);
                 }
-                currentStudentGrade = (decimal)(sumAssignmentscore) / currentAssignments;
+                currentStudentGrade = (decimal)(sumAssignmentscore) / examAssignments;
                 string currentStudentLetterGrade = "";
                 if (currentStudentGrade >= 97)
                     currentStudentLetterGrade = "A+";
