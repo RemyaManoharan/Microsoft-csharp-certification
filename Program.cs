@@ -1,9 +1,18 @@
-﻿
-int firstValue = 500;
-int secondValue = 600;
-int largerValue = Math.Max(firstValue, secondValue);
+﻿using System;
 
-Console.WriteLine(largerValue);
+namespace TestProject
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            // ControlStructures.LearnIfElse();
+    //    InventoryArray.LearnArray();
+    //    Excercise3.FraudFinder();
+    StudentGradingApp.StundentGradeFinder();
+        }
+    }
+}
 
 
 
