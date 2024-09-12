@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Runtime.InteropServices.Marshalling;
 
 namespace TestProject
 {
@@ -12,7 +13,8 @@ namespace TestProject
             // StudentGradingApp.StundentGradeFinder();
             //TypeConverter.SchoolData();
            //
-           FizzBuzz.FizzBuzzApp();
+          // FizzBuzz.FizzBuzzApp();
+          Animals.AnimalApp();
 
         }
     }
