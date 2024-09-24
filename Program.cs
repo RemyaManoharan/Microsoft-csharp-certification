@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Runtime.InteropServices.Marshalling;
 
 namespace TestProject
 {
@@ -6,10 +7,17 @@ namespace TestProject
     {
         static void Main(string[] args)
         {
+        StringIndex.StringIndexApp();
             // ControlStructures.LearnIfElse();
-    //    InventoryArray.LearnArray();
-    //    Excercise3.FraudFinder();
-    StudentGradingApp.StundentGradeFinder();
+             // InventoryArray.LearnArray();
+            //    Excercise3.FraudFinder();
+            // StudentGradingApp.StundentGradeFinder();
+            //TypeConverter.SchoolData();
+           //
+          // FizzBuzz.FizzBuzzApp();
+          //Animals.AnimalApp();
+          PetApp.PetAppManager();
+        
         }
     }
 }
