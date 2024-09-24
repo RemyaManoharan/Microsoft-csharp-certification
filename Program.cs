@@ -7,15 +7,17 @@ namespace TestProject
     {
         static void Main(string[] args)
         {
+        StringIndex.StringIndexApp();
             // ControlStructures.LearnIfElse();
-              InventoryArray.LearnArray();
+             // InventoryArray.LearnArray();
             //    Excercise3.FraudFinder();
             // StudentGradingApp.StundentGradeFinder();
             //TypeConverter.SchoolData();
            //
           // FizzBuzz.FizzBuzzApp();
           //Animals.AnimalApp();
-
+          PetApp.PetAppManager();
+        
         }
     }
 }
